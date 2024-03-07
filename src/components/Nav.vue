@@ -6,7 +6,7 @@ import { navLinks, functionalMenu } from "../constants/index";
 </script>
 
 <template>
-    <header class="absolue padding-x py-8 z-10 w-full">
+    <header class="absolue padding-x py-6 z-10 w-full">
         <nav class="flex justify-between items-center max-container">
             <a href="/">
                 <img :src="headerLogo" alt="Logo" height="30" width="130" />

@@ -1,33 +1,35 @@
 <script setup lang="ts">
 
+// import { defineProps } from 'vue';
+
 defineProps({
     thumbnail: {
         type: String,
-        required: true
+        required: true,
     },
-    bigShoeImg: {
+    bigShoe: {
         type: String,
-        required: true
-    }
-})
+        required: true,
+    },
+});
 
-const handleClick = () => {
-    if (bigShoeImg !== selectedShoe) 
-}
 
 </script>
 
 <template>
-    <div class="border-black border-2 rounded-xl cursor-pointer max-sm:flex-1"
-        :class="`${bigShoeImg === seletedShoe ? 'border-coral-red' : 'border-transparent' }`"
-        @click="handleClick"
-        >
+    <div
+        class="border rounded-xl cursor-pointer max-sm:flex-1"
+        :class="{
+            'border-coral-red': bigShoe === thumbnail,
+            'border-transparent': bigShoe !== thumbnail
+        }"
+    >
         <img
-                :src="thumbnail"
-                alt="shoe collection"
-                width="127"
-                height="103.34"
-                class="object-contain"
-            />
+            alt="shoe collection"
+            width="127"
+            height="103.34"
+            class="object-contain"
+            :src="thumbnail" 
+        />
     </div>
 </template>

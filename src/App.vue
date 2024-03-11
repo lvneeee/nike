@@ -14,7 +14,7 @@ import Nav from './components/Nav.vue';
 
 <template>
     <main class="relative">
-        <Nav />
+        <Nav class="absolute top-0" />
         <section class="">
             <Hero />
         </section>

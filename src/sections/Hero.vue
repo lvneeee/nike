@@ -6,7 +6,7 @@ import ShoeCard from "../components/ShoeCard.vue";
 import { arrowRight } from "../assets/icons";
 import { statistics, shoes } from "../constants/index";
 
-const selectedShoe = ref("");
+const selectedShoe = ref(shoes[0].bigShoe);
 
 function changeBigShoeImg(bigShoe: string) {
     selectedShoe.value = bigShoe;
@@ -71,8 +71,8 @@ function changeBigShoeImg(bigShoe: string) {
             >
                 <ShoeCard v-for="(shoe, i) in shoes" :key="i"
                     :thumbnail="shoe.thumbnail"
-                    @click="changeBigShoeImg"
-                    :bigShoeImg="shoe.bigShoe"
+                    @click="() => changeBigShoeImg(shoe.bigShoe)"
+                    :bigShoe="shoe.bigShoe"
                 />
             </div>
         </div>

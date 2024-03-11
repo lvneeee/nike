@@ -15,7 +15,7 @@ const props = defineProps({
 });
 
 const buttonClasses = computed(() => {
-    let classes = "button ";
+    let classes = "";
     if (props.var === "primary") {
         classes += "bg-coral-red text-white border-coral-red";
     } else if (props.var === "secondary") {

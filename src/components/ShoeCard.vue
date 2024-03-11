@@ -1,51 +1,33 @@
 <script setup lang="ts">
-import { computed } from "vue";
 
-interface ImgURL {
-    thumbnail: string;
-    bigShoe: string;
-}
-
-const props = defineProps({
-    imgURL: {
-        type: Object as () => ImgURL,
-        required: true,
+defineProps({
+    thumbnail: {
+        type: String,
+        required: true
     },
     bigShoeImg: {
         type: String,
-        required: true,
-    },
-});
-
-const isBigShoe = computed(() => props.bigShoeImg === props.imgURL.bigShoe);
+        required: true
+    }
+})
 
 const handleClick = () => {
-    if (!isBigShoe.value) {
-        emit("change-big-shoe-image", props.imgURL.bigShoe);
-    }
-};
+    if (bigShoeImg !== selectedShoe) 
+}
 
-const emit  = defineEmits(["change-big-shoe-image"]);
 </script>
 
 <template>
-    <div
-        :class="`border-2 rounded-xl ${
-            isBigShoe ? 'border-coral-red' : 'border-transparent'
-        }`"
-        class="cursor-pointer max-sm:flex-1"
+    <div class="border-black border-2 rounded-xl cursor-pointer max-sm:flex-1"
+        :class="`${bigShoeImg === seletedShoe ? 'border-coral-red' : 'border-transparent' }`"
         @click="handleClick"
-    >
-        <div
-            class="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4"
         >
-            <img
-                :src="imgURL.thumbnail"
+        <img
+                :src="thumbnail"
                 alt="shoe collection"
                 width="127"
                 height="103.34"
                 class="object-contain"
             />
-        </div>
     </div>
 </template>

@@ -24,19 +24,19 @@ import Nav from './components/Nav.vue';
         <section class="padding">
             <SuperQuality />
         </section>
-        <section class="padding">
+        <section class="padding-x py-10">
             <Services />
         </section>
         <section class="padding">
             <SpecialOffer />
         </section>
-        <section class="padding">
+        <section class="bg-pale-blue padding">
             <CustomerReview />
         </section>
-        <section class="padding">
+        <section class="padding-x sm:py-32 py-16 w-full">
             <Subcribe />
         </section>
-        <section class="padding">
+        <section class="padding-x padding-t pb-8 bg-black">
             <Footer />
         </section>
     </main>

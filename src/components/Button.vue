@@ -22,6 +22,8 @@ const buttonClasses = computed(() => {
         classes += "bg-gray-600 text-white";
     } else if (props.var === "outline") {
         classes += "border-coral-red text-black";
+    } else if (props.var === "ghost") {
+        classes += "text-slate-gray border border-slate-gray";
     }
     return classes;
 });
@@ -34,6 +36,6 @@ const buttonClasses = computed(() => {
         class="flex justify-center items-center gap-2 px-7 py-4 boder font-montserrat text-lg leading-none rounded-full"
     >
         <slot></slot>
-        <img :src="icon" alt="" class="ml-2 rounded-full w-5 h-5" />
+        <img v-if="icon" :src="icon" alt="" class="ml-2 rounded-full w-5 h-5" />
     </button>
 </template>

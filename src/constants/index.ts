@@ -63,17 +63,17 @@ export const products = [
 
 export const services = [
     {
-        imgURL: truckFast,
+        icon: truckFast,
         label: "Free shipping",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
-        imgURL: shieldTick,
+        icon: shieldTick,
         label: "Secure Payment",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
-        imgURL: support,
+        icon: support,
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },

@@ -24,7 +24,7 @@ defineProps({
 <template>
     <div class="flex justify-center items-center flex-col">
         <img :src="avt" alt="Our customer" class="rounded-full object-cover" width="120" height="120">
-        <p class="mt-6 max-w-sm text-left first-line:ml-4 info-text">{{ feedback }}</p>
+        <p class="mt-6 max-w-sm text-left first-line:ml-4 h-36 overflow-hidden info-text">{{ feedback }}</p>
         <div class="mt-3 flex justify-center gap-2.5 items-center">
             <img :src="star" width="20" height="20" class="object-contain">
             <p class="text-xl font-montserrat text-slate-gray">({{ rating }})</p>

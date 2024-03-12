@@ -91,6 +91,18 @@ export const reviews = [
         customerName: 'Lota Mongeskar',
         rating: 4.9,
         feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+    },
+    {
+        avt: customer1,
+        customerName: 'Morich Brown',
+        rating: 4.5,
+        feedback: "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!"
+    },
+    {
+        avt: customer2,
+        customerName: 'Lota Mongeskar',
+        rating: 4.9,
+        feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
     }
 ];
 

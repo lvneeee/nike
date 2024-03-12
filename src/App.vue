@@ -15,7 +15,7 @@ import Nav from './components/Nav.vue';
 <template>
     <main class="relative">
         <Nav class="absolute top-0" />
-        <section class="">
+        <section class="xl:padding-l wide:padding-r padding-b">
             <Hero />
         </section>
         <section class="">

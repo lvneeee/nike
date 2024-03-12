@@ -6,9 +6,9 @@ import { navLinks, functionalMenu } from "../constants/index";
 </script>
 
 <template>
-    <header class="absolue padding-x py-6 z-10 w-full">
+    <header class="absolue px-6 py-6 z-10 w-full">
         <nav class="flex justify-between items-center max-container">
-            <a href="/">
+            <a href="/" class="pl-4">
                 <img :src="headerLogo" alt="Logo" height="30" width="130" />
             </a>
             <ul
@@ -24,7 +24,7 @@ import { navLinks, functionalMenu } from "../constants/index";
                 </li>
             </ul>
             <ul
-                class="flex justify-center items-center gap-4 max-lg:hidden"
+                class="flex justify-center items-center pr-4 gap-4 max-lg:hidden"
             >
                 <li v-for="functional in functionalMenu" :key="functional.label" class="after:content-['/'] after:text-black after:font-bold after:ml-4 last:after:hidden">
                     <a

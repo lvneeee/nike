@@ -1,7 +1,5 @@
 <script setup lang="ts">
 
-// import { defineProps } from 'vue';
-
 defineProps({
     thumbnail: {
         type: String,
@@ -17,12 +15,7 @@ defineProps({
 </script>
 
 <template>
-    <div
-        class="border rounded-xl cursor-pointer max-sm:flex-1"
-        :class="{
-            'border-coral-red': bigShoe === thumbnail,
-            'border-transparent': bigShoe !== thumbnail
-        }"
+    <div class="p-4 border-2 bg-card bg-center bg-cover rounded-xl cursor-pointer max-sm:flex-1"
     >
         <img
             alt="shoe collection"

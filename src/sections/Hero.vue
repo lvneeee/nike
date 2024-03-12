@@ -16,7 +16,7 @@ function changeBigShoeImg(bigShoe: string) {
 <template>
     <section
         id="home"
-        class="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container border-2 border-red-500"
+        class="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container "
     >
         <div
             class="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28"
@@ -67,12 +67,18 @@ function changeBigShoeImg(bigShoe: string) {
             />
 
             <div
-                class="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6"
+                class="flex gap-4 absolute -bottom-[5%] sm:gap-6 sm:mx-auto max-sm:px-6"
             >
-                <ShoeCard v-for="(shoe, i) in shoes" :key="i"
+                <ShoeCard
+                    v-for="(shoe, i) in shoes"
+                    :key="i"
                     :thumbnail="shoe.thumbnail"
                     @click="() => changeBigShoeImg(shoe.bigShoe)"
                     :bigShoe="shoe.bigShoe"
+                    :class="{
+                        'border-coral-red': selectedShoe === shoe.bigShoe,
+                        'border-transparent': selectedShoe !== shoe.bigShoe,
+                    }"
                 />
             </div>
         </div>

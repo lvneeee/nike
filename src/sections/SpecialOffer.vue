@@ -4,7 +4,7 @@ import { offer } from '../assets/images';
 import Button from '../components/Button.vue';
 </script>
 <template>
-    <section class="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
+    <section id="offer" class="flex justify-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
         <div class="flex-1">
             <img :src="offer" width="775" height="680" class="object-contain w-full ">
         </div>

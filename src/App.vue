@@ -18,25 +18,25 @@ import Nav from './components/Nav.vue';
         <section class="xl:padding-l wide:padding-r padding-b">
             <Hero />
         </section>
-        <section class="">
+        <section class="padding">
             <PopularProducts />
         </section>
-        <section class="">
+        <section class="padding">
             <SuperQuality />
         </section>
-        <section class="">
+        <section class="padding">
             <Services />
         </section>
-        <section class="">
+        <section class="padding">
             <SpecialOffer />
         </section>
-        <section class="">
+        <section class="padding">
             <CustomerReview />
         </section>
-        <section class="">
+        <section class="padding">
             <Subcribe />
         </section>
-        <section class="">
+        <section class="padding">
             <Footer />
         </section>
     </main>
